@@ -1,0 +1,47 @@
+﻿/* Set margin and padding to 0 for body and html elements */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Set the background for the body element */
+body {
+    background: url('Images/xxxxx   .jpg') fixed center;
+    background-size: cover;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: none; /* Remove background from this element */
+    height: 100vh;
+    width: 100%;
+    /* Add more styling properties as needed */
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .body-content {
+        padding: 0;
+    }
+}
